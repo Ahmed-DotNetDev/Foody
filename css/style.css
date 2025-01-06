@@ -1,0 +1,295 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'poppins', sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+:root {
+    --orange: #f7f91f;
+    --text-color-1: #444;
+    --text-color-2: #666;
+    --bg-color-1: #fff;
+    --bg-color-2: #eee;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background: var(--bg-color-2);
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    color: var(--text-color-1);
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 7rem;
+    background: var(--bg-color-1);
+}
+
+.home .image {
+    flex: 1 1 45rem;
+}
+
+.home .image img {
+    width: 100%;
+}
+
+.home .content {
+    flex: 1 1 45rem;
+}
+
+.home .content h3 {
+    color: var(--text-color-1);
+    font-size: 4rem
+}
+
+.home .content p {
+    color: var(--text-color-2);
+    font-size: 1.7rem;
+    line-height: 1.7;
+    padding: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.5rem;
+    background-color: blueviolet;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: letter-spacing .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+
+.btn:hover {
+    letter-spacing: 1px;
+    background-color: rgba(137, 43, 226, 0.822);
+}
+
+
+/* order section */
+
+.form-container form {
+    background: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container form .inputBox {
+    flex: 1 1 23rem;
+}
+
+.form-container form .inputBox span {
+    font-size: 1.7rem;
+    color: var(--text-color-2);
+}
+
+.form-container form .inputBox input {
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    background: var(--bg-color-2);
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    text-transform: none;
+    width: 100%;
+    padding: 1rem;
+}
+
+.form-container form .btn {
+    margin-top: 25px;
+    flex: 1 1 23rem;
+}
+
+
+.packages .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.packages .box-container .box {
+    background: var(--bg-color-1);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.packages .box-container .box .image {
+    width: 100%;
+    height: 25rem;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.packages .box .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.packages .box .image h3 {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #4201018a;
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: 400;
+}
+
+.packages .box .image h3 i {
+    color: rgb(255, 190, 201);
+    padding-right: .5rem
+}
+
+
+.packages .box-container .box .price {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--text-color-2);
+}
+
+.packages .box-container .content {
+    padding: 1.5rem;
+    padding-top: 0;
+
+}
+
+.packages .box-container .content .price span {
+    font-weight: lighter;
+    text-decoration: line-through;
+    color: var(--text-color-2);
+    font-size: 1.9rem;
+}
+
+.packages .box-container .box .content p {
+    line-height: 1.7rem;
+    color: var(--text-color-1);
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+
+.packages .box-container .box .content .btn {
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+    margin-top: .7rem;
+}
+
+.pricing .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.pricing .box-container .box {
+    background: var(--bg-color-1);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    text-align: center;
+}
+
+.pricing .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--text-color-1);
+    background: var(--bg-color-2);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.pricing .box-container .box .price .amount {
+    font-weight: 500;
+    font-size: 5rem;
+    color: #4d4c4c;
+}
+
+.pricing .box-container .box .price span {
+    font-size: 3.5rem;
+    color: #666;
+}
+
+.pricing .box-container .box ul {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.pricing .box-container .box ul li {
+    font-size: 1.7rem;
+    color: var(--text-color-2);
+    font-weight: 300;
+    padding: .7rem 0;
+}
+
+.pricing .box-container .box .btn:hover {
+
+    background-color: rgba(137, 43, 226, 0.89);
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact form .inputBox input,
+.contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--text-color-1);
+    margin: .7rem 0;
+    background: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    text-transform: none;
+    border-radius: .5rem;
+}
+
+.contact form textarea {
+    height: 20rem;
+    resize: none;
+}
+
+.contact form .inputBox input {
+    width: 49%;
+}
